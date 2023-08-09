@@ -36,7 +36,7 @@
 
 
 
-class arr1_leet_73_set_mat_zeros {
+class leetcode_73_set_mat_zeros {
    
     public void setZeroes(int[][] matrix) {
         int m = matrix.length;
