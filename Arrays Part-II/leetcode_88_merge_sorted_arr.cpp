@@ -1,4 +1,4 @@
-// Striver's SDE Sheet - Array2 - Leetcode Q88 - C++
+// Striver's SDE Sheet - Array2 - Leetcode Q88 - C++ , Java
 
 // 88. Merge Sorted Array
 // Easy
@@ -68,3 +68,34 @@ public:
         sort(nums1.begin(),nums1.end());
     }
 };
+
+
+
+
+// import java.util.Arrays;
+
+// public class Q88_merge_sorted_arr {
+//     public void merge(int[] nums1, int m, int[] nums2, int n) {
+//         int left=m-1;
+//         int right=0;
+
+//         while(left>=0 && right<n){
+//             if(nums1[left]>nums2[right]){
+//                 int temp = nums1[left];
+//                 nums1[left] = nums2[right];
+//                 nums2[right] = temp;
+//                 left--;
+//                 right++;
+//             }
+//             else{
+//                 break;
+//             }
+//         }
+
+//         for(int i=m;i<(n+m);i++){
+//             nums1[i]=nums2[i-m];
+//         }
+             
+//         Arrays.sort(nums1);
+//     }
+// }
