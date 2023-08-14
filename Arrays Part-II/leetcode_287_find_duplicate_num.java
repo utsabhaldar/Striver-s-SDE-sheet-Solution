@@ -33,8 +33,8 @@
 public class leetcode_287_find_duplicate_num {
     public int findDuplicate(int[] nums) {
 
-        // Time Complexity: O(nlogn)O(nlogn)O(nlogn)
-        // Space Complexity: O(logn)O(logn)O(logn)
+        // Time Complexity: O(nlogn)
+        // Space Complexity: O(logn)
 
         // Arrays.sort(nums);
         // for (int i=0; i<nums.length; i++){
