@@ -1,4 +1,4 @@
-// Striver's SDE Sheet - Array1 - Leetcode Q7121 - Java
+// Striver's SDE Sheet - Array1 - Leetcode Q121 - Java
 
 // 121. Best Time to Buy and Sell Stock
 
