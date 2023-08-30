@@ -1,4 +1,4 @@
-// Striver's SDE Sheet - Array2 - Leetcode Q287 - Java
+// Striver's SDE Sheet - Array2 - Leetcode Q287 - C++, Java
 
 // 287. Find the Duplicate Number
 
@@ -29,7 +29,28 @@
 
 
 
+// C++ Optimal Solution
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+    int slow = nums[0];
+    int fast = nums[0];
+    do {
+      slow = nums[slow];
+      fast = nums[nums[fast]];
+    } while (slow != fast);
+    fast = nums[0];
+    while (slow != fast) {
+      slow = nums[slow];
+      fast = nums[fast];
+    }
+    return slow;
+    }
+};
 
+// Java Optimal Solution
 public class leetcode_287_find_duplicate_num {
     public int findDuplicate(int[] nums) {
 
@@ -43,6 +64,9 @@ public class leetcode_287_find_duplicate_num {
         //         }
         // }
 
+
+
+        // Optimal approach 1
         // Time Complexity: O(n)
         // Space Complexity: O(1)
 
@@ -54,5 +78,20 @@ public class leetcode_287_find_duplicate_num {
             nums[idx] = -nums[idx];
         }
         return 0;
+
+        // Optimmal approach 2
+        // int slow = nums[0];
+        // int fast = nums[0];
+        // do {
+        //     slow = nums[slow];
+        //     fast = nums[nums[fast]];
+        // } while (slow != fast);
+
+        // fast = nums[0];
+        // while (slow != fast) {
+        //     slow = nums[slow];
+        //     fast = nums[fast];
+        // }
+        // return slow;
     }
 }
