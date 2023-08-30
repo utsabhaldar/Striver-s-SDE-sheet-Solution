@@ -40,11 +40,13 @@
 // 1 <= m + n <= 200
 // -109 <= nums1[i], nums2[j] <= 109
  
-
 // Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 
 
 
+// C++ Optimal Solution
+// Time Complexity: O(M+N) + O(N) + O((M+N)log(M+N))
+// Space Complexity: O(1).
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
@@ -60,42 +62,39 @@ public:
                 break;
             }
         }
-
         for(int i=m;i<(n+m);i++){
             nums1[i]=nums2[i-m];
         }
-             
         sort(nums1.begin(),nums1.end());
     }
 };
 
 
+// Java Optimal Solution
+// Time Complexity: O(M+N) + O(N) + O((M+N)log(M+N))
+// Space Complexity: O(1).
+public class Q88_merge_sorted_arr {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int left=m-1;
+        int right=0;
 
+        while(left>=0 && right<n){
+            if(nums1[left]>nums2[right]){
+                int temp = nums1[left];
+                nums1[left] = nums2[right];
+                nums2[right] = temp;
+                left--;
+                right++;
+            }
+            else{
+                break;
+            }
+        }
 
-// import java.util.Arrays;
-
-// public class Q88_merge_sorted_arr {
-//     public void merge(int[] nums1, int m, int[] nums2, int n) {
-//         int left=m-1;
-//         int right=0;
-
-//         while(left>=0 && right<n){
-//             if(nums1[left]>nums2[right]){
-//                 int temp = nums1[left];
-//                 nums1[left] = nums2[right];
-//                 nums2[right] = temp;
-//                 left--;
-//                 right++;
-//             }
-//             else{
-//                 break;
-//             }
-//         }
-
-//         for(int i=m;i<(n+m);i++){
-//             nums1[i]=nums2[i-m];
-//         }
+        for(int i=m;i<(n+m);i++){
+            nums1[i]=nums2[i-m];
+        }
              
-//         Arrays.sort(nums1);
-//     }
-// }
+        Arrays.sort(nums1);
+    }
+}
