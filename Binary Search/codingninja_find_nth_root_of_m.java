@@ -1,7 +1,7 @@
 // Striver's SDE Sheet - Binary Search - Coding Ninja - find nth root of m - Java
 
 // Time:O(log n * log m)
-public class cpdingninja_find_nth_root_of_m {
+public class codingninja_find_nth_root_of_m {
     public static int func(int mid, int n, int m) {
         long ans = 1;
         for (int i = 1; i <= n; i++) {
