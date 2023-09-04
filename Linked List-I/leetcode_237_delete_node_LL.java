@@ -12,7 +12,6 @@
 // All the values before node should be in the same order.
 // All the values after node should be in the same order.
 // Custom testing:
-
 // For the input, you should provide the entire linked list head and the node to be given node. node should not be the last node of the list and should be an actual node in the list.
 // We will build the linked list and pass the node to your function.
 // The output will be the entire list after calling your function.
