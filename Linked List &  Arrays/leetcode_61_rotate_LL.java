@@ -16,7 +16,7 @@
 
 
 
-// Time:O(n) + O(n – (n%k)) [n is Length of List]
+// Time:O(n) + O(n – (n%k)) = O(n)         [n is Length of List]
 // Space:O(1)
 public class leetcode_61_rotate_LL {
     public ListNode rotateRight(ListNode head, int k) {
