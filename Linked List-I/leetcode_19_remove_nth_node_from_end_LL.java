@@ -36,7 +36,7 @@ public class leetcode_19_remove_nth_node_from_end_LL {
             ListNode(int val, ListNode next) { this.val = val; this.next = next; }
         }
       
-        public ListNode removeNthFromEnd(ListNode head, int n) {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode s = head;
         ListNode f = head;
         for(int i=0; i<n; i++) f = f.next;
@@ -47,5 +47,5 @@ public class leetcode_19_remove_nth_node_from_end_LL {
         }
         s.next = s.next.next;
         return head;
-        }
+    }
 }
