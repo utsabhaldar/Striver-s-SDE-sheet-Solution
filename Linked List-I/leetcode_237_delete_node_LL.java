@@ -37,13 +37,16 @@
 // Time:O(1)
 // Space:O(1)
 public class leetcode_237_delete_node_LL {
+    public class ListNode {
+            int val;
+            ListNode next;
+            ListNode(int x) { val = x; }
+        }
 
-    /*
     public void deleteNode(ListNode node) {
         if(node == null) return;
         int nextValue = node.next.val;
         node.next = node.next.next;
         node.val = nextValue;
     }
-    */
 }
