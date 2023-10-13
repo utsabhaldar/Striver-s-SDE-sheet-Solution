@@ -29,7 +29,13 @@
 // Space Complexity: O(max(m,n))
 public class leetcode_2_add_2_nums_LL {
 
-    /*
+    public class ListNode {
+            int val;
+            ListNode next;
+            ListNode() {}
+            ListNode(int val) { this.val = val; }
+            ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+        }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode();
@@ -53,7 +59,5 @@ public class leetcode_2_add_2_nums_LL {
         }
         return dummy.next;
     }
-
-    */
 }
 
