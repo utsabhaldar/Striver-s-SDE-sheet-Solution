@@ -27,7 +27,15 @@
 // Time:O(n)
 // Space:O(1)
 public class leetcode_206_reverse_LL {
-    /*
+
+    public class ListNode {
+            int val;
+            ListNode next;
+            ListNode() {}
+            ListNode(int val) { this.val = val; }
+            ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    }
+    
 
     public ListNode reverseList(ListNode head) {
         ListNode prev = null;
@@ -41,6 +49,4 @@ public class leetcode_206_reverse_LL {
         }
         return prev;
     }
-    
-    */
 }
