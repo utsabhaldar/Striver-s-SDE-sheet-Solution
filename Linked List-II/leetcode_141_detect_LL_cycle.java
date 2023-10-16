@@ -32,7 +32,14 @@
 //Time:O(n)
 //Space:O(1)
 public class leetcode_141_detect_LL_cycle {
-    /*
+    class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
+    }
     public boolean hasCycle(ListNode head) {
         ListNode s = head, f = head;
         while(f != null && f.next != null){
@@ -41,5 +48,4 @@ public class leetcode_141_detect_LL_cycle {
         }
         return false;
     }
-    */
 }
