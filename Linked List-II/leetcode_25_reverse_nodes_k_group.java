@@ -1,4 +1,4 @@
-// Striver's SDE Sheet - Linked List 2 - Leetcode Q141 - Java
+// Striver's SDE Sheet - Linked List 2 - Leetcode Q25 - Java
 
 // 25. Reverse Nodes in k-Group
 
