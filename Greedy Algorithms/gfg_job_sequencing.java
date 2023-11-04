@@ -1,4 +1,4 @@
-// Striver's SDE Sheet - Greedy Algorithms - Coding Ninja - Job Sequencing Problem - Java
+// Striver's SDE Sheet - Greedy Algorithms - GFG - Job Sequencing Problem - Java
 
 // Given a set of N jobs where each jobi has a deadline and profit associated with it.
 // Each job takes 1 unit of time to complete and only one job can be scheduled at a time. We earn the profit 
@@ -18,6 +18,7 @@
 
 
 // Time:O((n log n) + n*m)   [n = number of jobs, m = deadlines at worst case]
+// Space:O(m)
 import java.util.*;
 
 class Job {
