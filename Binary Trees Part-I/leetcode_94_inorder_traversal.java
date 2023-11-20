@@ -16,7 +16,7 @@
 // Space:O(n)
 import java.util.*;
 
-public class Q94_inorder_traversal {
+public class leetcode_94_inorder_traversal {
     public class TreeNode {
         int val;
         TreeNode left;
